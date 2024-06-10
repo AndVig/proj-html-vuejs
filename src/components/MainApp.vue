@@ -3,6 +3,8 @@ export default {
   name: "MainApp",
 };
 </script>
-<template></template>
+<template>
+    
+</template>
 
 <style lang="scss" scoped></style>

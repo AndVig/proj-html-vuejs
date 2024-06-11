@@ -1,10 +1,10 @@
 <script>
-import dataHome from '../dataHome.js'
+import { dataHome } from '../data/dataHome.js'
 export default {
   name: "MainHomeApp",
   data() {
     return {
-      dataHome
+      dataHome,
     };
   },
 };

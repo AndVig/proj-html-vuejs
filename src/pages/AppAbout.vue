@@ -1,13 +1,18 @@
 <script>
+import FooterApp from "../components/FooterApp.vue";
+import HeaderApp from "../components/HeaderApp.vue";
+import MainAboutApp from "../components/MainAboutApp.vue";
+
 export default {
   name: "AppAbout",
+  components: { HeaderApp, FooterApp, MainAboutApp },
 };
 </script>
 
 <template>
-  <div>
-    <h1>about</h1>
-  </div>
+  <HeaderApp />
+  <MainAboutApp />
+  <FooterApp />
 </template>
 
 <style lang="scss" scoped></style>

@@ -1,11 +1,13 @@
 <script>
 export default {
-  name: "FooterApp",
+  name: "MainAboutApp",
+  data() {
+    return {};
+  },
 };
 </script>
-
 <template>
-  <h1>footer</h1>
+  <h1>Homepage About</h1>
 </template>
 
 <style lang="scss" scoped></style>

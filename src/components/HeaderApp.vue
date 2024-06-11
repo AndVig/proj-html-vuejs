@@ -38,13 +38,21 @@ export default {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                ><router-link :to="{ name: 'home' }">Home</router-link></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#"
+                ><router-link :to="{ name: 'about' }">About</router-link></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#"
+                ><router-link :to="{ name: 'contact' }"
+                  >Contact Us</router-link
+                ></a
+              >
             </li>
             <li class="nav-item dropdown">
               <a

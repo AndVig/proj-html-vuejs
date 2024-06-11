@@ -55,7 +55,8 @@ export default {
         border: none;
         
     }
-    card:hover{
-       
+    .card:hover{
+        transform: translateY(-10px);
+        transition: 0.5s;
     }
 </style>

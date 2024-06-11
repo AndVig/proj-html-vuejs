@@ -1,11 +1,7 @@
 <script>
-import CargoSection from "./CargoSection.vue";
 export default {
   name: "CargoSectionElements",
   props: ["subTitle", "title", "text"],
-  components: {
-    CargoSection,
-  },
 };
 </script>
 <template>

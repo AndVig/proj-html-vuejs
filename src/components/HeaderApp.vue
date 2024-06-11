@@ -2,6 +2,11 @@
 import { dataHeader } from "../data/dataHeader.js";
 export default {
   name: "HeaderApp",
+  props: {
+    telephoneNumber: String,
+    mainMailAdress: String,
+    openHours: String,
+  },
   data() {
     return {
       dataHeader,
@@ -27,7 +32,7 @@ export default {
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
               <i class="fas fa-clock text-after"></i>
-              Open Hours: Mon - Sat - 9:00 - 18:00
+              {{ openHours }}
             </a>
           </li>
         </ul>
@@ -36,13 +41,13 @@ export default {
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
               <i class="fas fa-phone-alt text-after"></i>
-              +1 (305) 1234-5678
+              {{ telephoneNumber }}
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
               <i class="fas fa-envelope text-after"></i>
-              hello@example.com
+              {{ mainMailAdress }}
             </a>
           </li>
           <li class="nav-item">
@@ -112,15 +117,51 @@ export default {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                link
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#"
+                    ><router-link :to="{ name: 'home' }">Home</router-link></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><router-link :to="{ name: 'about' }">About</router-link></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><router-link :to="{ name: 'contact' }"
+                      >Contact Us</router-link
+                    ></a
+                  >
                 </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#cart"
+              >
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </li>
+            <span class="cart-counter">0</span>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-read px-4 rounded-pill fs-6 btn-lg text-white"
+              >
+                <span>BUY NEXGEN</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -135,18 +176,43 @@ export default {
     width: 100%;
     a {
       color: #606d75;
+      font-weight: 400;
     }
   }
   background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
   a {
     color: #bec1ce;
     text-decoration: none;
+    font-weight: 750;
     img {
       width: 40%;
     }
     &:hover {
       color: #058283;
     }
+    .btn {
+      color: #fff;
+    }
   }
+}
+.cart-counter {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 100%;
+  background-color: #d90a2c;
+  color: #fff;
+  transform: translate(-7.5px);
+}
+.btn-read {
+  border: #ffffff 2px solid;
+}
+.btn-read span {
+  color: rgba($color: #fdfbfb, $alpha: 0.7);
+}
+.btn-read span:hover {
+  color: white;
 }
 </style>

@@ -9,9 +9,11 @@ export default {
 
   <div class="col-4 ms-5">
     <h6 class="text-uppercase clr-sub-text pt-4">{{ subTitle }}</h6>
-    <h1 class="text-uppercase display-2 text-white fw-bold py-3">{{ title }}</h1>
+    <h1 class="text-uppercase display-2 text-white fw-bold py-3">
+      {{ title }}
+    </h1>
     <p class="pb-3">{{ text }}</p>
-    <div class="d-flex gap-3">
+    <div class="d-flex gap-3 pb-5">
       <button
         type="button"
         class="btn btn-touch fs-6 px-4 rounded-pill btn-lg text-white"

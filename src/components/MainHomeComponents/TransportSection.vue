@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import TransportSectionElements from "./TransportSectionElements.vue";
 
 export default {
@@ -10,4 +10,4 @@ export default {
   <TransportSectionElements />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->

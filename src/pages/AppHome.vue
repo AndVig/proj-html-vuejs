@@ -9,18 +9,17 @@ export default {
   name: "AppHome",
   components: { FooterApp, MainHomeApp, HeaderApp },
   setup() {
-    const data = toRaw(dataHeader);
     return {
-      data,
+      data: dataHeader,
     };
   },
 };
 </script>
 <template>
   <HeaderApp
-    :telephoneNumber="this.data.contacts.telephoneNumber"
-    :mainMailAdress="this.data.contacts.mainMailAdress"
-    :openHours="this.data.contacts.openHours"
+    :telephoneNumber="data.contacts.telephoneNumber"
+    :mainMailAdress="data.contacts.mainMailAdress"
+    :openHours="data.contacts.openHours"
   />
   <MainHomeApp />
   <FooterApp />

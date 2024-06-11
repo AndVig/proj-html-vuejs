@@ -1,9 +1,10 @@
 <script>
 import CargoSection from "./MainHomeComponents/CargoSection.vue";
+import TransportSectionElements from "./MainHomeComponents/TransportSectionElements.vue";
 
 export default {
   name: "MainHomeApp",
-  components: { CargoSection },
+  components: { CargoSection, TransportSectionElements },
 };
 </script>
 <template>
@@ -15,6 +16,9 @@ export default {
         </div>
       </div>
     </div>
+  </section>
+  <section id="transport">
+<TransportSectionElements/>
   </section>
 </template>
 

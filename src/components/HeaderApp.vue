@@ -20,8 +20,52 @@ export default {
 };
 </script>
 <template>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <header class="has-navbar-top has-navbar-bottom">
+    <nav class="navbar navbar-expand top">
+      <div class="container top-part header">
+        <ul class="navbar-nav left">
+          <li class="nav-item">
+            <a href="#" class="nav-link m-0">
+              <i class="fas fa-clock text-after"></i>
+              Open Hours: Mon - Sat - 9:00 - 18:00
+            </a>
+          </li>
+        </ul>
+        <div class="ml-auto"></div>
+        <ul class="navbar-nav right">
+          <li class="nav-item">
+            <a href="#" class="nav-link m-0">
+              <i class="fas fa-phone-alt text-after"></i>
+              +1 (305) 1234-5678
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link m-0">
+              <i class="fas fa-envelope text-after"></i>
+              hello@example.com
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link m-0">
+              <i class="fab fa-facebook-f m-0"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link m-0">
+              <i class="fab fa-twitter m-0"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link m-0">
+              <i class="fab fa-linkedin-in m-0"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav
+      class="navbar navbar-expand-lg navbar-relative visible navbar-sticky bg-body-tertiary"
+    >
       <div class="container-fluid px-5">
         <a class="navbar-brand" href="#"
           ><router-link :to="{ name: 'home' }"
@@ -87,12 +131,18 @@ export default {
 
 <style scoped lang="scss">
 .navbar {
+  .top-part {
+    width: 100%;
+    a {
+      color: #606d75;
+    }
+  }
   background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
   a {
     color: #bec1ce;
     text-decoration: none;
     img {
-      width: 50%;
+      width: 40%;
     }
     &:hover {
       color: #058283;

@@ -1,5 +1,5 @@
 <script>
-import { dataFooter } from "../dataFooter.js";
+import { dataFooter } from "../data/dataFooter.js";
 export default {
   name: "FooterApp",
   data(){

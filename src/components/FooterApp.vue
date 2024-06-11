@@ -39,7 +39,7 @@ export default {
     li{
         color: #8f93a5
     }
-    li :hover{
+    li:hover{
         color: #00A6A6;
     }
     .card{

@@ -22,8 +22,11 @@ export default {
 <template>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#"
+          ><router-link :to="{ name: 'home' }"
+            ><img src="../assets/img/logo.svg" alt="" /></router-link
+        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -35,7 +38,10 @@ export default {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
@@ -79,4 +85,18 @@ export default {
   </header>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.navbar {
+  background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
+  a {
+    color: #bec1ce;
+    text-decoration: none;
+    img {
+      width: 50%;
+    }
+    &:hover {
+      color: #058283;
+    }
+  }
+}
+</style>

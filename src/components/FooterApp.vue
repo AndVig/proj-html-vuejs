@@ -12,11 +12,10 @@ export default {
 
 <template>
   
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <footer class="d-flex">
         
-            <div class="col mb-3"></div>
-            <div class="col mb-3"></div>
-            <div v-for="card in dataFooter.cards" class="card col mb-3">
+            <div class="p-2 flex-grow-1"></div>
+            <div v-for="card in dataFooter.cards" class="card ">
                 <h5>{{card.title}}</h5>
                 <ul class="nav flex-column">
                   <li v-for="element in card.elements" class="nav-item mb-2">{{ element }}</li>
@@ -31,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
     footer{
+        background-image: linear-gradient(-45deg, #2a2d30 0%, #111117 100%);
         background-color: #111117;
     }
     h5{
@@ -44,11 +44,18 @@ export default {
     }
     .card{
         background-color: #343a40;
-        width: 14rem;
+        width: 15rem;
+        height: 18rem;
         margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
         padding: 35px;
         border-radius: 10px;
         border: none;
-        transition: all 0.4s ease-out 0s;
+        
+    }
+    card:hover{
+       
     }
 </style>

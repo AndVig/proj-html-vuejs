@@ -15,16 +15,12 @@ export default {
 </script>
 
 <template>
-  <section class="bg-cargo">
-    <div class="container">
-      <CargoSectionElements
-        v-for="text in dataHomePage.cargo"
-        :subTitle="text.sub_title"
-        :title="text.title"
-        :text="text.text"
-      />
-    </div>
-  </section>
+  <CargoSectionElements
+    v-for="text in dataHomePage.cargo"
+    :subTitle="text.sub_title"
+    :title="text.title"
+    :text="text.text"
+  />
 </template>
 
 <style lang="scss" scoped></style>

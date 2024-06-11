@@ -1,11 +1,12 @@
 <script>
 export default {
-  name: "HeaderApp",
+  name: "AppContact",
 };
 </script>
-
 <template>
-  <h1>Header</h1>
+  <div>
+    <h1>contact</h1>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>

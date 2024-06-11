@@ -14,6 +14,7 @@ export default {
 
 <template>
   <HeaderApp />
+  <router-view></router-view>
   <MainApp />
   <FooterApp />
 </template>

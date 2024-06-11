@@ -34,11 +34,18 @@ export default {
         background-color: #111117;
     }
     h5{
-        font-family: "Inter", sans-serif;
+        color: white;
+    }
+    li{
+        color: #8f93a5
+    }
+    li :hover{
+        color: #00A6A6;
     }
     .card{
         background-color: #343a40;
-        z-index: 1;
+        width: 14rem;
+        margin-left: 2rem;
         padding: 35px;
         border-radius: 10px;
         border: none;

@@ -40,9 +40,7 @@ p {
   color: rgba($color: #fdfbfb, $alpha: 0.7);
 }
 
-.margin {
-  margin-right: 30px;
-}
+
 .btn-touch {
   background-color: #00a6a6;
 }

@@ -33,6 +33,9 @@ export default {
     footer{
         background-color: #111117;
     }
+    h5{
+        font-family: "Inter", sans-serif;
+    }
     .card{
         background-color: #343a40;
         z-index: 1;

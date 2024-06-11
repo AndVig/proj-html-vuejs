@@ -1,14 +1,14 @@
 <script>
-import CargoSectionElements from "./MainHomeComponents/CargoSectionElements.vue";
+import CargoSection from "./MainHomeComponents/CargoSection.vue";
 
 export default {
   name: "MainHomeApp",
-  components: { CargoSectionElements },
+  components: { CargoSection },
 };
 </script>
 <template>
   <section class="bg-cargo">
-    <CargoSectionElements />
+    <CargoSection />
   </section>
 </template>
 

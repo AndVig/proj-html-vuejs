@@ -71,4 +71,25 @@ export const dataHomePage = reactive({
       ],
     },
   },
+  //STRUTTURA DATI TERZA PARTE (MAIN SERVICES)
+  service: {
+    sub_title: "Road Transport",
+    title: "Main Services",
+    pharagraph:
+      "With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.",
+    card: [
+      {
+        title: "Technology",
+        text: "We are continually focused on developing technology solutions adapted to our client's/ needs.",
+      },
+      {
+        title: "Refeer Cargo",
+        text: "Regular and frequent monitoring from the receipt of the loaded cpntainer to final destination.",
+      },
+      {
+        title: "Dry Cargo",
+        text: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
+      },
+    ],
+  },
 });

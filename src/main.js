@@ -17,8 +17,9 @@ import { faArrowRight as arrow } from "@fortawesome/free-solid-svg-icons";
 import { faCheck as check } from "@fortawesome/free-solid-svg-icons";
 import { faXmark as cross } from "@fortawesome/free-solid-svg-icons";
 import { faDollarSign as dollar } from "@fortawesome/free-solid-svg-icons";
+import { faTemperatureHigh as temperature } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
-library.add([secretAgent, fb, cargo, arrow, dollar, check, cross]);
+library.add([secretAgent, fb, cargo, arrow, dollar, check, cross, temperature]);
 
 createApp(App)
   .use(router)

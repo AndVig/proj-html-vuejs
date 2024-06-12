@@ -1,27 +1,30 @@
 <script>
 import CargoSection from "./MainHomeComponents/CargoSection.vue";
 import TransportSectionElements from "./MainHomeComponents/TransportSectionElements.vue";
-
+import MainService from "./MainHomeComponents/MainService.vue";
 export default {
   name: "MainHomeApp",
-  components: { CargoSection, TransportSectionElements },
+  components: { CargoSection, TransportSectionElements, MainService },
 };
 </script>
 <template>
-  <section id="cargo">
-    <div class="container-full">
+  <div class="container-full">
+    <section id="cargo">
       <div class="bg-cargo">
         <div class="overlay">
           <CargoSection />
         </div>
       </div>
-    </div>
-  </section>
-  <section id="transport">
-    <div class="container-full">
+    </section>
+    <section id="transport">
       <TransportSectionElements />
-    </div>
-  </section>
+    </section>
+    <section id="main-services">
+      <div class="bg-more-black">
+        <MainService />
+      </div>
+    </section>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -32,7 +35,9 @@ export default {
   background-position: center;
   width: 100%;
 }
-
+.bg-more-black {
+  background-color: #16171c;
+}
 .overlay {
   background-color: rgba(28, 28, 28, 0.724); /* Colore scuro con opacità */
 }

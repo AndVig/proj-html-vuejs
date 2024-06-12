@@ -60,17 +60,19 @@ export default {
                   :icon="['fas', 'dollar-sign']"
                   class="font-medium"
               /></span>
-              <span class="font-price"> <strong>{{
-                dataHomePage.transport.basicPlan.price
-              }}</strong></span>
+              <span class="font-price">
+                <strong>{{
+                  dataHomePage.transport.basicPlan.price
+                }}</strong></span
+              >
               <span class="font-period">{{
                 dataHomePage.transport.basicPlan.period
               }}</span>
             </div>
-            <ul class="py-3 ps-1 no-style">
+            <ul class="py-2 ps-1 no-style">
               <li
                 v-for="offer in dataHomePage.transport.basicPlan.offers"
-                class="my-4"
+                class="my-3"
               >
                 <div
                   v-if="offer.flag"

@@ -82,13 +82,11 @@ export const dataHomePage = reactive({
         title: "Technology",
         text: "We are continually focused on developing technology solutions adapted to our client's/ needs.",
         name: "truck-ramp-box",
-      
       },
       {
         title: "Refeer Cargo",
         text: "Regular and frequent monitoring from the receipt of the loaded cpntainer to final destination.",
         name: "temperature-high",
-      
       },
       {
         title: "Dry Cargo",
@@ -97,4 +95,24 @@ export const dataHomePage = reactive({
       },
     ],
   },
+  staffNumbers: {
+    sub_title: "WHAT ARE WE DOING",
+    title: "Results in Numbers",
+    pharagraph:
+      "Our goal is to exceed expectations by delivering the best job possible.",
+  },
+  numbers: [
+    {
+      num: 128,
+    },
+    {
+      num: 230,
+    },
+    {
+      num: 517,
+    },
+    {
+      num: 94,
+    },
+  ],
 });

@@ -104,15 +104,19 @@ export const dataHomePage = reactive({
   numbers: [
     {
       num: 128,
+      type: "Certifications",
     },
     {
       num: 230,
+      type: "230",
     },
     {
       num: 517,
+      type: "Customers",
     },
     {
       num: 94,
+      type: "Countries Served",
     },
   ],
 });

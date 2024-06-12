@@ -50,7 +50,7 @@ export default {
             <h3>Our Business Units</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
           </div>
-          <div class="col py-5 px-5 text-white">2</div>
+          <div class="col py-5 px-5 text-white"><font-awesome-icon :icon="['fas', 'phone']" /></div>
           <div class="col py-5 text-white">3</div>
         </div>
       </div>

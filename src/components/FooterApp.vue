@@ -55,18 +55,7 @@ export default {
         </div>
             
     </footer>
-    <!-- <footer class="d-flex">
-        
-        <div class="p-2 flex-grow-1">
-            <img class="img" src="../assets/img/logo.svg" alt="">
-        </div>
-        <div v-for="card in dataFooter.cards" class="card ">
-            <h5>{{card.title}}</h5>
-            <ul class="nav flex-column">
-              <li v-for="element in card.elements" class="nav-item mb-2">{{ element }}</li>
-            </ul>
-        </div>
-</footer> -->
+   
 </template>
 
 <style lang="scss" scoped>

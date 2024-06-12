@@ -1,13 +1,14 @@
 <script>
-export default {
-  name: "MainContactApp",
-  data() {
-    return {};
-  },
-};
+  export default {
+    name: "MainContactApp",
+    data() {
+      return {};
+    },
+  };
 </script>
 <template>
   <main>
+    <!-- Contact Us -->
     <div class="background">
       <div class="overlay">
         <div class="container d-flex justify-content-center inner ">
@@ -18,7 +19,9 @@ export default {
         </div>
       </div>
     </div>
+    <!-- Divider -->
     <div class="divider"></div>
+    <!-- Know First + Form -->
     <div class="container text-start py-5">
       <div class="row align-items-start py-5">
         <div class="col px-5">
@@ -29,6 +32,7 @@ export default {
               and the news of the current market.</p>
           </div>
         </div>
+        <!-- Form 1 -->
         <div class="col py-5">
           <form>
             <div class="mb-3">
@@ -42,6 +46,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- Contacts -->
     <div class=" bg-black ">
       <div class="container text-start py-3">
         <div class="row justify-content-around py-3">
@@ -49,6 +54,7 @@ export default {
             <p id="green">TALK TO AN EXPERT</p>
             <h3>Our Business Units</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
+
           </div>
           <div class="col py-5 px-5 text-white">
             <ul class="navbar-nav">
@@ -98,8 +104,83 @@ export default {
           </div>
         </div>
       </div>
-      
     </div>
+    <!-- Get in touch -->
+     <div class="container text-start">
+      <div class="row justify-content-around py-3">
+        <!--Form 2-->
+        <div class="col py-5 px-2 text-black">
+          <p id="green">SEND A MESSAGE</p>
+            <h3>GET IN TOUCH</h3>
+            <p> We will respond to your message as soon as possible.​</p>
+            <div class="col row">
+              <div class="col">
+                <input type="name" placeholder="Name" class="form-control form" id="name" >
+              </div>
+              <div class="col">
+                <input type="name" placeholder="Email" class="form-control form" id="email">
+              </div>
+            </div>
+            <div class="col row my-3">
+              <div class="col">
+                <input type="name" placeholder="Name" class="form-control form" id="name" >
+              </div>
+              <div class="col">
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary dropdown-toggle form" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                  <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group">
+                <textarea class="form-control form" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+        </div>
+        <!--Other stuff-->
+        <div class="col py-5 px-5 text-white">
+          <div class="text-black">
+            <h3>Exemple Inc.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
+                <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
+                <div class="list-text">+1 (305) 1234-5678</div>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link text-left switch" href="mailto:mail@example.com">
+                <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'envelope']" /></div>
+                <div class="list-text">mail@example.com</div>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link text-left switch" href="#">
+                <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
+                <div class="list-text">Main Avenue, 987 </div>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link text-left switch" href="#">
+                <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
+                <div class="list-text">Main Avenue, 987 </div>
+              </a>
+            </li>
+          </ul>
+          <button type="submit" class="btn my-3 map-dark btn-primary">View Map</button>
+        </div>
+        
+      </div>
+     </div>
   </main>
 </template>
 
@@ -165,6 +246,10 @@ h3{
   border: none;
   border-radius: 4px;
 
+}
+.form.dropdown-toggle{
+  width: 180px;
+  text-align: start;
 }
 .icon{ 
   padding-left: 4px;

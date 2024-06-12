@@ -11,9 +11,12 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
 import { faUserSecret as secretAgent } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF as fb } from "@fortawesome/free-brands-svg-icons/faFacebookF";
+import { faTruckRampBox as cargo } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add([secretAgent]);
+library.add([secretAgent, fb, cargo]);
+
 
 createApp(App)
   .use(router)

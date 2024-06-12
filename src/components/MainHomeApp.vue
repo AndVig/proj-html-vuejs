@@ -18,7 +18,9 @@ export default {
     </div>
   </section>
   <section id="transport">
-<TransportSectionElements/>
+    <div class="container-full">
+      <TransportSectionElements />
+    </div>
   </section>
 </template>
 

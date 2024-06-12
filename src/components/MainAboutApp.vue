@@ -6,7 +6,6 @@ export default {
 };
 </script>
 <template>
-  <h1>Homepage About</h1>
   <WhoWeAre />
 </template>
 

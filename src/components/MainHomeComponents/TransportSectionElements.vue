@@ -11,7 +11,7 @@ export default {
 </script>
 <template>
   <div class="d-flex">
-    <div class="col-7 ms-5">
+    <div class="col-7 flex-grow-1 ms-5">
       <p class="sub-title">
         {{ dataHomePage.transport.sub_title }}
       </p>
@@ -35,7 +35,7 @@ export default {
         </li>
       </ul>
     </div>
-    <div class="col-4 p-4 ms-3 mt-5">
+    <div class="col-4 p-4 me-3 mt-5">
       <div class="bg-secondary-subtle rounded-4 mt-5">
         <div class="content pt-4 px-4">
           <div

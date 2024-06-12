@@ -43,8 +43,8 @@ export default {
       </div>
     </div>
     <div class=" bg-black ">
-      <div class="container text-start py-5">
-        <div class="row justify-content-around py-5">
+      <div class="container text-start py-3">
+        <div class="row justify-content-around py-3">
           <div class="col-3 py-5 px-2 text-white">
             <p id="green">TALK TO AN EXPERT</p>
             <h3>Our Business Units</h3>
@@ -58,9 +58,44 @@ export default {
                   <div class="list-text">+1 (305) 1234-5678</div>
                 </a>
               </li>
+              <li class="navbar-item">
+                <a class="nav-link text-left switch" href="mailto:mail@example.com">
+                  <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'envelope']" /></div>
+                  <div class="list-text">mail@example.com</div>
+                </a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link text-left switch" href="#">
+                  <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
+                  <div class="list-text">Main Avenue, 987 </div>
+                </a>
+              </li>
             </ul>
+            <button type="submit" class="btn my-3 map-dark btn-primary">View Map</button>
           </div>
-          <div class="col py-5 text-white">3</div>
+          <div class="col py-5 px-5 text-white">
+            <ul class="navbar-nav">
+              <li class="navbar-item">
+                <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
+                  <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
+                  <div class="list-text">+1 (305) 1234-5678</div>
+                </a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link text-left switch" href="mailto:mail@example.com">
+                  <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'envelope']" /></div>
+                  <div class="list-text">mail@example.com</div>
+                </a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link text-left switch" href="#">
+                  <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
+                  <div class="list-text">Main Avenue, 987 </div>
+                </a>
+              </li>
+            </ul>
+            <button type="submit" class="btn my-3 map-dark btn-primary">View Map</button>
+          </div>
         </div>
       </div>
       
@@ -158,7 +193,7 @@ h3{
 }
 .subscribe{
   background-color: #058283;
-  border-color: #058283;
+
   color: #ffffff;
   font-family: Montserrat,sans-serif;
   font-style: default;
@@ -167,8 +202,28 @@ h3{
   line-height: 1.2;
   padding: 10px 25px;
   border-radius: 100px;
-  border: 2px solid;
+  border: none; 
   text-transform: uppercase;
+}
+.subscribe:hover{
+  background-color:#00A6A6;
+}
+.map-dark{
+  background-color: #00A6A626;
+  color: #058283;
+  font-family: Montserrat,sans-serif;
+  font-style: default;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: none; 
+  text-transform: uppercase;
+}
+.map-dark:hover{
+  background-color: #058283;
+  color: #ffffff;
 }
 .overlay {
   background-color: rgba(28, 28, 28, 0.724); /* Colore scuro con opacità */

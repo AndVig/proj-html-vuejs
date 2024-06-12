@@ -13,26 +13,49 @@ export default {
         <div class="container d-flex justify-content-center inner ">
           <div class="text-align-center text-white">
             <h2>Contact Us</h2>
-            <p id="home" class="text-center">Home <span id="contactUs" class="text-center">/ Contact Us</span></p>
+            <p id="home" class="text-center">Home <span id="green" class="text-center">/ Contact Us</span></p>
           </div>
         </div>
       </div>
     </div>
     <div class="divider"></div>
     <div class="container text-start py-5">
-      <div class="row align-items-start">
-        <div class="col">
+      <div class="row align-items-start py-5">
+        <div class="col px-5">
           <div class="py-5">
-            <p>NEWSLETTER</p>
-            <H3>Know First</H3>
+            <p id="green">NEWSLETTER</p>
+            <h3>Know First</h3>
             <p>Follow closely and receive content about our company
               and the news of the current market.</p>
           </div>
         </div>
-        <div class="col">ciao2</div>
+        <div class="col py-5">
+          <form>
+            <div class="mb-3">
+              <input type="name" placeholder="Name" class="form-control form" id="name" >
+            </div>
+            <div class="mb-3">
+              <input type="name" placeholder="Email" class="form-control form" id="email">
+            </div>
+            <button type="submit" class="btn subscribe btn-primary">Subscribe</button>
+          </form>
+        </div>
       </div>
     </div>
-    
+    <div class=" bg-black ">
+      <div class="container text-start py-5">
+        <div class="row align-items-start py-5">
+          <div class="col-2 py-5 text-white">
+            <p id="green">TALK TO AN EXPERT</p>
+            <h3>Our Business Units</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
+          </div>
+          <div class="col py-5 px-5 text-white">2</div>
+          <div class="col py-5 text-white">3</div>
+        </div>
+      </div>
+      
+    </div>
   </main>
 </template>
 
@@ -69,14 +92,49 @@ export default {
 #home:hover{
   color:#00A6A6;
 }
-#contactUs{
+#green{
   color:#00A6A6;
+}
+.bg-black{
+  background-color: #111117;
 }
 h2{
   color: white;
   font-size: 4.5rem;
   font-weight: 900;
   line-height: 1.2;
+}
+h3{
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.2;
+
+}
+.form{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #606D75;
+  background-color: #ECECEC;
+  opacity:#ECECEC ;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+
+}
+.subscribe{
+  background-color: #058283;
+  border-color: #058283;
+  color: #ffffff;
+  font-family: Montserrat,sans-serif;
+  font-style: default;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 10px 25px;
+  border-radius: 100px;
+  border: 2px solid;
+  text-transform: uppercase;
 }
 .overlay {
   background-color: rgba(28, 28, 28, 0.724); /* Colore scuro con opacità */

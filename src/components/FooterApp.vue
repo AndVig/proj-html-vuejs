@@ -44,16 +44,14 @@ export default {
                 </div>
                 <div class="d-flex col row  ">
                     <div v-for="card in dataFooter.cards" class="card col-3">
-                    <h5 >{{card.title}}</h5>
-                    <ul class="nav flex-column">
-                        <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
-                    </ul>
+                        <h5 >{{card.title}}</h5>
+                        <ul class="nav flex-column">
+                            <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
+                        </ul>
+                    </div>
                 </div>
-                </div>
-
             </div>
-        </div>
-            
+        </div>         
     </footer>
    
 </template>
@@ -81,8 +79,7 @@ export default {
     .info{
         width: 20rem;
         height: 18rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        
         margin-top: 10rem;
         margin-bottom: 10rem;
     }

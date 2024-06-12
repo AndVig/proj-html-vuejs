@@ -36,7 +36,8 @@ export default {
   width: 100%;
 }
 .bg-more-black {
-  background-color: #16171c;
+  background-image: linear-gradient(-45deg, #2a2d30 0%, #111117 100%);
+  background-color: #111117;
 }
 .overlay {
   background-color: rgba(28, 28, 28, 0.724); /* Colore scuro con opacità */

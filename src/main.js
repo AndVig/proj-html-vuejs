@@ -10,7 +10,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faUserSecret as secretAgent } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF as fb } from "@fortawesome/free-brands-svg-icons/faFacebookF";
 import { faTruckRampBox as cargo } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight as arrow } from "@fortawesome/free-solid-svg-icons";
@@ -20,8 +19,22 @@ import { faDollarSign as dollar } from "@fortawesome/free-solid-svg-icons";
 import { faPhone as phone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope as mail } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot as map } from "@fortawesome/free-solid-svg-icons";
+import { faBoxesStacked as box } from "@fortawesome/free-solid-svg-icons";
+import { faTemperatureHigh as temperature } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
-library.add([secretAgent, fb, cargo, arrow, dollar, check, cross, phone, mail, map]);
+library.add([
+  fb,
+  cargo,
+  arrow,
+  dollar,
+  check,
+  cross,
+  phone,
+  mail,
+  map,
+  box,
+  temperature,
+]);
 
 createApp(App)
   .use(router)

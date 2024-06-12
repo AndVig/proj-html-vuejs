@@ -81,14 +81,19 @@ export const dataHomePage = reactive({
       {
         title: "Technology",
         text: "We are continually focused on developing technology solutions adapted to our client's/ needs.",
+        name: "truck-ramp-box",
+      
       },
       {
         title: "Refeer Cargo",
         text: "Regular and frequent monitoring from the receipt of the loaded cpntainer to final destination.",
+        name: "temperature-high",
+      
       },
       {
         title: "Dry Cargo",
         text: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
+        name: "boxes-stacked",
       },
     ],
   },

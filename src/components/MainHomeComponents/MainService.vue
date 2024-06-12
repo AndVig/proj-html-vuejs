@@ -36,18 +36,28 @@ export default {
           </button>
         </div>
       </div>
-<div class="d-flex gap-3 ">
-    <div v-for="card in dataHomePage.service.card" class="me-5  card light-grey  mb-3 mt-3" style="width: 23rem">
-      <div class="card-body ">
-        <span></span>
-        <span></span>
-        <h5 class="card-title">{{ card.title }}</h5>
-        <p class="card-text">
-          {{ card.text }}
-        </p>
+      <div class="d-flex gap-1">
+        <div
+          v-for="card in dataHomePage.service.card"
+          class="me-4 card bg-card light-grey margin-btm rounded-4 mt-3 transition"
+          style="width: 50rem"
+        >
+          <div class="card-body p-5">
+            <div class="d-flex justify-content-between fs-4 pb-5 water-color">
+              <font-awesome-icon
+                :icon="['fas', card.name]"
+                class="bg-water p-3 rounded-pill"
+              />
+              <font-awesome-icon :icon="['fas', 'arrow-right']" />
+            </div>
+
+            <h5 class="card-title text-white fs-3">{{ card.title }}</h5>
+            <p class="card-text">
+              {{ card.text }}
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-</div>
     </div>
   </div>
 </template>
@@ -59,6 +69,9 @@ export default {
 .light-grey {
   color: #606d8b;
 }
+.bg-water {
+  background-color: #1f383d;
+}
 
 .btn-see {
   border: #00a6a6 2px solid;
@@ -66,5 +79,20 @@ export default {
 .btn-see:hover {
   color: white;
   background-color: #00a6a6;
+}
+
+.bg-card {
+  background-image: linear-gradient(-45deg, #2a2d30 0%, #111117 100%);
+  background-color: #111117;
+}
+
+.margin-btm {
+  margin-bottom: 10%;
+}
+
+.transition:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+  cursor: pointer;
 }
 </style>

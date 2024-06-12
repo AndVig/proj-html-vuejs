@@ -44,8 +44,8 @@ export default {
     </div>
     <div class=" bg-black ">
       <div class="container text-start py-5">
-        <div class="row align-items-start py-5">
-          <div class="col-2 py-5 text-white">
+        <div class="row justify-content-around py-5">
+          <div class="col-3 py-5 px-2 text-white">
             <p id="green">TALK TO AN EXPERT</p>
             <h3>Our Business Units</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
@@ -53,9 +53,9 @@ export default {
           <div class="col py-5 px-5 text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
-                <a class="nav-link text-left" href="tel:+1 (305) 1234-5678">
+                <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
-                  <span class="list-text">+1 (305) 1234-5678</span>
+                  <div class="list-text">+1 (305) 1234-5678</div>
                 </a>
               </li>
             </ul>
@@ -131,7 +131,7 @@ h3{
   border-radius: 4px;
 
 }
-.icon{
+.icon{ 
   padding-left: 4px;
   padding-top: 4px;
   color: #058283;
@@ -141,7 +141,20 @@ h3{
   background-color: #00A6A626;
   width: 30px;
   padding: 3px;
-  
+  margin-right: 5px;
+  display: inline-block;
+}
+.switch:hover{
+  .icon-wrapper{
+    background-color: #058283;
+  }
+  .icon{
+    color: #ffffff;
+  }
+}
+.list-text{
+  color: #AFB6BA;
+  display: inline;
 }
 .subscribe{
   background-color: #058283;

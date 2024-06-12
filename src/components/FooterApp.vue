@@ -14,7 +14,7 @@ export default {
   
     <footer >
         <div class="container ">
-            <div class="row justify-content-start  ">
+            <div class="row ">
                 <div class="col-3 info">
                     <img class="img" src="../assets/img/logo.svg" alt="">
                     <div class="content-block">
@@ -42,8 +42,8 @@ export default {
                     </ul>
                     
                 </div>
-                <div class="d-flex col row  ">
-                    <div v-for="card in dataFooter.cards" class="card col-3">
+                <div class="d-flex col row cards-container ">
+                    <div v-for="card in dataFooter.cards" class="card col-1">
                         <h5 >{{card.title}}</h5>
                         <ul class="nav flex-column">
                             <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
@@ -101,17 +101,18 @@ export default {
         border-color: white;
         
     }
+    
     .card{
         box-sizing: border-box;
         background-color: #343a40;
         
-        min-width: 15rem;
+        min-width: 11rem;
         height: 18rem;
         margin-left: 2rem;
-        margin-right: 2rem;
         margin-top: 10rem;
         margin-bottom: 10rem;
-        padding: 35px;
+        padding-left: 16px;
+        padding-top: 30px;
         border-radius: 10px;
         border: none;
         

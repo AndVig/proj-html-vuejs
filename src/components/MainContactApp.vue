@@ -50,7 +50,16 @@ export default {
             <h3>Our Business Units</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
           </div>
-          <div class="col py-5 px-5 text-white"><font-awesome-icon :icon="['fas', 'phone']" /></div>
+          <div class="col py-5 px-5 text-white">
+            <ul class="navbar-nav">
+              <li class="navbar-item">
+                <a class="nav-link text-left" href="tel:+1 (305) 1234-5678">
+                  <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
+                  <span class="list-text">+1 (305) 1234-5678</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="col py-5 text-white">3</div>
         </div>
       </div>
@@ -121,6 +130,18 @@ h3{
   border: none;
   border-radius: 4px;
 
+}
+.icon{
+  padding-left: 4px;
+  padding-top: 4px;
+  color: #058283;
+  
+}
+.icon-wrapper{
+  background-color: #00A6A626;
+  width: 30px;
+  padding: 3px;
+  
 }
 .subscribe{
   background-color: #058283;

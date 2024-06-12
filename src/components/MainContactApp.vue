@@ -18,9 +18,21 @@ export default {
         </div>
       </div>
     </div>
-    <div class="divider">
-      <div  ></div>
+    <div class="divider"></div>
+    <div class="container text-start py-5">
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="py-5">
+            <p>NEWSLETTER</p>
+            <H3>Know First</H3>
+            <p>Follow closely and receive content about our company
+              and the news of the current market.</p>
+          </div>
+        </div>
+        <div class="col">ciao2</div>
+      </div>
     </div>
+    
   </main>
 </template>
 

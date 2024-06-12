@@ -50,7 +50,6 @@ export default {
 }
 .divider{
   position: absolute;
-  z-index: 1;
   right: 0;
   left: calc(50% - 200px) ;
   top: 326px;

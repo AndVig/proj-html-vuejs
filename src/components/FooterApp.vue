@@ -12,10 +12,10 @@ export default {
 
 <template>
   
-    <footer class="footer main offers">
-        <div class="container-fluid px-5">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
-                <div class="col-12 col-md-6 col-lg-3 info">
+    <footer >
+        <div class="container ">
+            <div class="row justify-content-start  ">
+                <div class="col-3 info">
                     <img class="img" src="../assets/img/logo.svg" alt="">
                     <div class="content-block">
                         <p class="my-3">"Built to the smallest detail with"<br>" a focus on feature availability"</p>
@@ -42,11 +42,11 @@ export default {
                     </ul>
                     
                 </div>
-                <div class="d-flex flex-fill ">
-                    <div v-for="card in dataFooter.cards" class="card col-12 col-md-6 col-lg-3 ">
+                <div class="d-flex col row  ">
+                    <div v-for="card in dataFooter.cards" class="card col-3">
                     <h5 >{{card.title}}</h5>
                     <ul class="nav flex-column">
-                        <li v-for="element in card.elements" class="nav- mb-2">{{ element }}</li>
+                        <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
                     </ul>
                 </div>
                 </div>

@@ -56,7 +56,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
 
           </div>
-          <div class="col-3 py-5 text-white">
+          <div class="col-3 py-5  text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
                 <a class="nav-link text-left switch dim" href="tel:+1 (305) 1234-5678">

@@ -21,6 +21,9 @@ import { faEnvelope as mail } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot as map } from "@fortawesome/free-solid-svg-icons";
 import { faBoxesStacked as box } from "@fortawesome/free-solid-svg-icons";
 import { faTemperatureHigh as temperature } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF as facebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter as twitter } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn as linkedin } from "@fortawesome/free-brands-svg-icons";
 /* add icons to the library */
 library.add([
   fb,
@@ -34,6 +37,9 @@ library.add([
   map,
   box,
   temperature,
+  facebook,
+  twitter,
+  linkedin,
 ]);
 
 createApp(App)

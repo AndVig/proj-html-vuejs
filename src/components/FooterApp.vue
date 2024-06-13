@@ -51,7 +51,49 @@ export default {
                     </div>
                 </div>
             </div>
-        </div>         
+        </div> 
+        <nav class="navbar navbar-expand top">
+            <div class="container top-part header">
+                <ul class="navbar-nav left">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-0">
+                    <i class="fas fa-clock text-after"></i>
+                    {{ openHours }}
+                    </a>
+                </li>
+                </ul>
+                <div class="ml-auto"></div>
+                <ul class="navbar-nav right">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-0">
+                    <i class="fas fa-phone-alt text-after"></i>
+                    {{ telephoneNumber }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-0">
+                    <i class="fas fa-envelope text-after"></i>
+                    {{ mainMailAdress }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-0">
+                    <i class="fab fa-facebook-f m-0"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-0">
+                    <i class="fab fa-twitter m-0"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-0">
+                    <i class="fab fa-linkedin-in m-0"></i>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </nav>        
     </footer>
    
 </template>

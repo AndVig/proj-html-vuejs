@@ -15,41 +15,6 @@ export default {
     <footer >
         <div class="container ">
             <div class="row justify-content-center">
-                <!-- <div class="col-3 info">
-                    <img class="img" src="../assets/img/logo.svg" alt="">
-                    <div class="content-block">
-                        <p class="my-3">"Built to the smallest detail with"<br>" a focus on feature availability"</p>
-                    </div>
-                    <ul class="navbar-nav content-block">
-                        <li class="nav-item my-2">
-                            <a href="tel:+1 (305) 1234-5678" class="">+1 (305) 1234-5678</a><br>                        
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav content-block">
-                        <li class="nav-item my-2">
-                            <a href="mailto:hello@example.com" class="">hello@example.com</a><br>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav content-block">
-                        <li class="nav-item my-2">
-                            <a href="#" class="">Main Avenue, 987</a><br>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav content-block">
-                        <li class="nav-item my-2">
-                            <button class="button">BUY NEXGEN</button> 
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="d-flex col-7 row justify-content-end cards-container ">
-                    <div v-for="card in dataFooter.cards" class="card col-1">
-                        <h5 >{{card.title}}</h5>
-                        <ul class="nav flex-column">
-                            <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
-                        </ul>
-                    </div>
-                </div> -->
                 <div class="col-3 info">
                     <img class="img" src="../assets/img/logo.svg" alt="">
                     <div class="content-block">
@@ -153,8 +118,9 @@ export default {
         
     }
     .button{
-        color: #bec1ce;
         border-color: #05828380;
+        color: #bec1ce;
+        
         padding: 10px 25px;
         background-color: transparent;
         border-radius: 100px;
@@ -162,8 +128,7 @@ export default {
         transition: all .4s ease-out 0s;
     }
     .button:hover{
-        border-color: white;
-        
+        border-color: white;  
     }
     
     .card{
@@ -185,7 +150,5 @@ export default {
         transform: translateY(-10px);
         transition: 0.5s;
     }
-    // .cards-container{
-    //     width:50%;
-    // }
+    
 </style>

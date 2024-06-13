@@ -43,7 +43,7 @@ export default {
             <a href="#">T. Johnson</a>
           </div>
           <div class="mic">
-            <i class="fa-solid fa-microphone"></i>
+            <font-awesome-icon :icon="['fas', 'microphone']" />
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default {
                 <div class="col-3 info">
                     <img class="img" src="../assets/img/logo.svg" alt="">
                     <div class="content-block">
-                        <p class="my-3">"Built to the smallest detail with"<br>" a focus on feature availability"</p>
+                        <p class="my-3">Built to the smallest detail with<br> a focus on feature availability</p>
                     </div>
                     <ul class="navbar-nav content-block">
                         <li class="nav-item my-2">

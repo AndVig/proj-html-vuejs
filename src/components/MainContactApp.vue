@@ -1,8 +1,12 @@
 <script>
+import { dataContact } from '../data/dataContact.js';
+
   export default {
     name: "MainContactApp",
     data() {
-      return {};
+      return {
+        dataContact,
+      };
     },
   };
 </script>
@@ -13,7 +17,7 @@
       <div class="overlay">
         <div class="container d-flex justify-content-center inner ">
           <div class="text-align-center text-white">
-            <h2>Contact Us</h2>
+            <h2>{{ dataContact.area.start.title }}</h2>
             <p id="home" class="text-center">Home <span id="green" class="text-center">/ Contact Us</span></p>
           </div>
         </div>
@@ -26,10 +30,9 @@
       <div class="row justify-content-center align-items-center py-5">
         <div class="col-5 px-5">
           <div class="py-5">
-            <p id="green">NEWSLETTER</p>
-            <h3>Know First</h3>
-            <p>Follow closely and receive content about our company
-              and the news of the current market.</p>
+            <p id="green">{{dataContact.area.know.up }}</p>
+            <h3>{{dataContact.area.know.title }}</h3>
+            <p>{{dataContact.area.know.desc }}</p>
           </div>
         </div>
         <!-- Form 1 -->
@@ -51,9 +54,9 @@
       <div class="container text-start py-3">
         <div class="row justify-content-center py-3">
           <div class="col-3 py-5 px-2 text-white">
-            <p id="green">TALK TO AN EXPERT</p>
-            <h3>Our Business Units</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
+            <p id="green">{{dataContact.area.contacts[0].up }}</p>
+            <h3>{{dataContact.area.contacts[0].title }}</h3>
+            <p>{{dataContact.area.contacts[0].desc }}​</p>
 
           </div>
           <div class="col-3 py-5  text-white">
@@ -61,19 +64,19 @@
               <li class="navbar-item">
                 <a class="nav-link text-left switch dim" href="tel:+1 (305) 1234-5678">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
-                  <div class="list-text">+1 (305) 1234-5678</div>
+                  <div class="list-text">{{dataContact.area.contacts[1].tel }}</div>
                 </a>
               </li>
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="mailto:mail@example.com">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'envelope']" /></div>
-                  <div class="list-text">mail@example.com</div>
+                  <div class="list-text">{{dataContact.area.contacts[1].mail }}</div>
                 </a>
               </li>
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="#">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
-                  <div class="list-text">Main Avenue, 987 </div>
+                  <div class="list-text">{{dataContact.area.contacts[1].address }} </div>
                 </a>
               </li>
             </ul>
@@ -84,19 +87,19 @@
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
-                  <div class="list-text">+1 (305) 1234-5678</div>
+                  <div class="list-text">{{dataContact.area.contacts[1].tel }}</div>
                 </a>
               </li>
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="mailto:mail@example.com">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'envelope']" /></div>
-                  <div class="list-text">mail@example.com</div>
+                  <div class="list-text">{{dataContact.area.contacts[1].mail }}</div>
                 </a>
               </li>
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="#">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
-                  <div class="list-text">Main Avenue, 987 </div>
+                  <div class="list-text">{{dataContact.area.contacts[1].address }} </div>
                 </a>
               </li>
             </ul>
@@ -110,9 +113,9 @@
       <div class="row justify-content-center py-3">
         <!--Form 2-->
         <div class="col-7 py-5 px-5 text-black">
-          <p id="green">SEND A MESSAGE</p>
-            <h3>GET IN TOUCH</h3>
-            <p> We will respond to your message as soon as possible.​</p>
+          <p id="green">{{dataContact.area.touch[0].up}}</p>
+            <h3>{{dataContact.area.touch[0].title}}</h3>
+            <p> {{dataContact.area.touch[0].desc}}​</p>
             <div class="col row">
               <div class="col">
                 <input type="name" placeholder="Name" class="form-control form" id="name" >
@@ -146,32 +149,32 @@
         <!--Other stuff-->
         <div class="col-3 py-5 px-5 text-white">
           <div class="text-black">
-            <h3>Exemple Inc.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>{{dataContact.area.touch[1].title}}</h3>
+            <p>{{dataContact.area.touch[1].desc}}.</p>
           </div>
           <ul class="navbar-nav">
             <li class="navbar-item">
               <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
                 <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
-                <div class="list-text">+1 (305) 1234-5678</div>
+                <div class="list-text">{{dataContact.area.contacts[1].tel }}</div>
               </a>
             </li>
             <li class="navbar-item">
               <a class="nav-link text-left switch" href="mailto:mail@example.com">
                 <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'envelope']" /></div>
-                <div class="list-text">mail@example.com</div>
+                <div class="list-text">{{dataContact.area.contacts[1].mail }}</div>
               </a>
             </li>
             <li class="navbar-item">
               <a class="nav-link text-left switch" href="#">
                 <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
-                <div class="list-text">Main Avenue, 987 </div>
+                <div class="list-text">{{dataContact.area.contacts[1].address}} </div>
               </a>
             </li>
             <li class="navbar-item">
               <a class="nav-link text-left switch" href="#">
                 <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'location-dot']" /></div>
-                <div class="list-text">Main Avenue, 987 </div>
+                <div class="list-text">{{dataContact.area.contacts[1].address}} </div>
               </a>
             </li>
           </ul>

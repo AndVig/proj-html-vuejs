@@ -46,7 +46,7 @@ export default {
         <ul class="navbar-nav left">
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
-              <i class="fas fa-clock text-after"></i>
+              <font-awesome-icon :icon="['fas', 'clock']" />
               {{ openHours }}
             </a>
           </li>
@@ -55,13 +55,13 @@ export default {
         <ul class="navbar-nav right">
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
-              <i class="fas fa-phone-alt text-after"></i>
+              <font-awesome-icon :icon="['fas', 'phone']" />
               {{ telephoneNumber }}
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
-              <i class="fas fa-envelope text-after"></i>
+              <font-awesome-icon :icon="['fas', 'envelope']" />
               {{ mainMailAdress }}
             </a>
           </li>
@@ -156,7 +156,7 @@ export default {
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
               </a>
             </li>
             <li class="nav-item">
@@ -166,7 +166,7 @@ export default {
                 data-toggle="modal"
                 data-target="#cart"
               >
-                <i class="fa-solid fa-bag-shopping"></i>
+                <font-awesome-icon :icon="['fas', 'bag-shopping']" />
               </a>
             </li>
             <span class="cart-counter">0</span>

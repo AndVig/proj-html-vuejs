@@ -49,7 +49,7 @@
     <!-- Contacts -->
     <div class=" bg-black ">
       <div class="container text-start py-3">
-        <div class="row justify-content-around py-3">
+        <div class="row justify-content-center py-3">
           <div class="col-3 py-5 px-2 text-white">
             <p id="green">TALK TO AN EXPERT</p>
             <h3>Our Business Units</h3>

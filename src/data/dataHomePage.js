@@ -100,23 +100,23 @@ export const dataHomePage = reactive({
     title: "Results in Numbers",
     pharagraph:
       "Our goal is to exceed expectations by delivering the best job possible.",
+    numbers: [
+      {
+        num: 128,
+        type: "Certifications",
+      },
+      {
+        num: 230,
+        type: "Employees",
+      },
+      {
+        num: 517,
+        type: "Customers",
+      },
+      {
+        num: 94,
+        type: "Countries Served",
+      },
+    ],
   },
-  numbers: [
-    {
-      num: 128,
-      type: "Certifications",
-    },
-    {
-      num: 230,
-      type: "230",
-    },
-    {
-      num: 517,
-      type: "Customers",
-    },
-    {
-      num: 94,
-      type: "Countries Served",
-    },
-  ],
 });

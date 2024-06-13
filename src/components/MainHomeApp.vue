@@ -2,9 +2,15 @@
 import CargoSection from "./MainHomeComponents/CargoSection.vue";
 import TransportSectionElements from "./MainHomeComponents/TransportSectionElements.vue";
 import MainService from "./MainHomeComponents/MainService.vue";
+import StaffNumbers from "./MainHomeComponents/StaffNumbers.vue";
 export default {
   name: "MainHomeApp",
-  components: { CargoSection, TransportSectionElements, MainService },
+  components: {
+    CargoSection,
+    TransportSectionElements,
+    MainService,
+    StaffNumbers,
+  },
 };
 </script>
 <template>
@@ -22,6 +28,11 @@ export default {
     <section id="main-services">
       <div class="bg-more-black">
         <MainService />
+      </div>
+    </section>
+    <section id="staff-numbers">
+      <div class="bg-camion">
+        <StaffNumbers />
       </div>
     </section>
   </div>
@@ -44,5 +55,13 @@ export default {
 }
 #cargo {
   margin-bottom: 30px;
+}
+
+.bg-camion {
+  background-image: url(../assets/img/bg-10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 </style>

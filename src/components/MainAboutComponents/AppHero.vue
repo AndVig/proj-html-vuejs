@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "WhoWeAre",
+  name: "AppHero",
 };
 </script>
 <template>
@@ -39,7 +39,7 @@ export default {
   position: absolute;
   right: 0;
   left: calc(50% - 200px);
-  top: 335px;
+  top: 345px;
   background-repeat: no-repeat;
   width: 420px;
   height: 200px;

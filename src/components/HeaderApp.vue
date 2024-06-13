@@ -22,10 +22,25 @@ export default {
       ],
     };
   },
+  mounted() {
+    // Aggiungi un event listener per lo scroll
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const navbar = document.querySelector(".navbar-sticky");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    },
+  },
 };
 </script>
 <template>
   <header class="has-navbar-top has-navbar-bottom">
+    <!-- Prima barra di navigazione -->
     <nav class="navbar navbar-expand top">
       <div class="container top-part header">
         <ul class="navbar-nav left">
@@ -68,14 +83,16 @@ export default {
         </ul>
       </div>
     </nav>
+    <!-- Seconda barra di navigazione -->
     <nav
-      class="navbar navbar-expand-lg navbar-relative visible navbar-sticky bg-body-tertiary"
+      class="navbar navbar-expand-lg navbar-relative navbar-sticky bg-body-tertiary"
     >
       <div class="container-fluid px-5">
-        <a class="navbar-brand" href="#"
-          ><router-link :to="{ name: 'home' }"
-            ><img src="../assets/img/logo.svg" alt="" /></router-link
-        ></a>
+        <a class="navbar-brand" href="#">
+          <router-link :to="{ name: 'home' }">
+            <img src="../assets/img/logo.svg" alt="" />
+          </router-link>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -93,21 +110,19 @@ export default {
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><router-link :to="{ name: 'home' }">Home</router-link></a
-              >
+              <a class="nav-link active" aria-current="page" href="#">
+                <router-link :to="{ name: 'home' }">Home</router-link>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><router-link :to="{ name: 'about' }">About</router-link></a
-              >
+              <a class="nav-link" href="#">
+                <router-link :to="{ name: 'about' }">About</router-link>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><router-link :to="{ name: 'contact' }"
-                  >Contact Us</router-link
-                ></a
-              >
+              <a class="nav-link" href="#">
+                <router-link :to="{ name: 'contact' }">Contact Us</router-link>
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -121,21 +136,21 @@ export default {
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#"
-                    ><router-link :to="{ name: 'home' }">Home</router-link></a
-                  >
+                  <a class="dropdown-item" href="#">
+                    <router-link :to="{ name: 'home' }">Home</router-link>
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#"
-                    ><router-link :to="{ name: 'about' }">About</router-link></a
-                  >
+                  <a class="dropdown-item" href="#">
+                    <router-link :to="{ name: 'about' }">About</router-link>
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#"
-                    ><router-link :to="{ name: 'contact' }"
+                  <a class="dropdown-item" href="#">
+                    <router-link :to="{ name: 'contact' }"
                       >Contact Us</router-link
-                    ></a
-                  >
+                    >
+                  </a>
                 </li>
               </ul>
             </li>
@@ -214,5 +229,16 @@ export default {
 }
 .btn-read span:hover {
   color: white;
+}
+.navbar-relative {
+  background: transparent;
+  transition: background 0.3s ease-in-out;
+  &.scrolled {
+    background: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
+    transition: background 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 }
 </style>

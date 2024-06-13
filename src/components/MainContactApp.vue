@@ -127,13 +127,12 @@
               </div>
               <div class="col">
                 <div class="input-group mb-3">
-                  <button class="form-control dropdown-toggle form" type="button" data-bs-toggle="dropdown" aria-expanded="false">--Please choose an option--</button>
-                  <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  <button class="form-control dropdown-toggle form" type="button" data-bs-toggle="dropdown" aria-expanded="false">—Please choose an option—</button>
+                  <ul class="dropdown-menu form">
+                    <li><a class="dropdown-item" href="#">Sales and Purchasing</a></li>
+                    <li><a class="dropdown-item" href="#">Financial and Accounts</a></li>
+                    <li><a class="dropdown-item" href="#">Human Resources</a></li>
+                    <li><a class="dropdown-item" href="#">Another subjects  </a></li>
                   </ul>
                 </div>
               </div>
@@ -249,10 +248,7 @@ h3{
   border-radius: 4px;
   text-align: start;
 }
-// .form.dropdown-toggle{
-//   width: 180px;
-//   text-align: start;
-// }
+
 .icon{ 
   padding-left: 4px;
   padding-top: 4px;

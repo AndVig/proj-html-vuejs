@@ -49,14 +49,14 @@
     <!-- Contacts -->
     <div class=" bg-black ">
       <div class="container text-start py-3">
-        <div class="row justify-content-around py-3">
+        <div class="row justify-content-center py-3">
           <div class="col-3 py-5 px-2 text-white">
             <p id="green">TALK TO AN EXPERT</p>
             <h3>Our Business Units</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
 
           </div>
-          <div class="col py-5 px-5 text-white">
+          <div class="col py-5 text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
@@ -79,7 +79,7 @@
             </ul>
             <button type="submit" class="btn my-3 map-dark btn-primary">View Map</button>
           </div>
-          <div class="col py-5 px-5 text-white">
+          <div class="col py-5 text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
@@ -264,6 +264,7 @@ h3{
   margin-right: 5px;
   display: inline-block;
 }
+
 .switch:hover{
   .icon-wrapper{
     background-color: #058283;

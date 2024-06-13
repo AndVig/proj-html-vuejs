@@ -119,4 +119,32 @@ export const dataHomePage = reactive({
       },
     ],
   },
+  feed: {
+    sub_title: "CUSTOMER TESTIMONIALS",
+    title: "Trusted Feedback",
+    pharagraph:
+      "We work intensively in search of ideals that can add up in the lives of our customers. This is what moves us and we are grateful for the recognition.",
+    card: [
+      {
+        title: "WooCommerce",
+        text: "We are continually focused on developing technology solutions adapted to our client's/ needs.",
+      },
+      {
+        title: "WordPress",
+        text: "Regular and frequent monitoring from the receipt of the loaded cpntainer to final destination.",
+      },
+      {
+        title: "Pingdom",
+        text: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
+      },
+      {
+        title: "jQuery",
+        text: "Regular and frequent monitoring from the receipt of the loaded cpntainer to final destination.",
+      },
+      {
+        title: "Less",
+        text: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
+      },
+    ],
+  },
 });

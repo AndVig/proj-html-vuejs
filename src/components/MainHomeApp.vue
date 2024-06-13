@@ -3,6 +3,7 @@ import CargoSection from "./MainHomeComponents/CargoSection.vue";
 import TransportSectionElements from "./MainHomeComponents/TransportSectionElements.vue";
 import MainService from "./MainHomeComponents/MainService.vue";
 import StaffNumbers from "./MainHomeComponents/StaffNumbers.vue";
+import Feedback from "./MainHomeComponents/Feedback.vue";
 export default {
   name: "MainHomeApp",
   components: {
@@ -10,6 +11,7 @@ export default {
     TransportSectionElements,
     MainService,
     StaffNumbers,
+    Feedback,
   },
 };
 </script>
@@ -36,6 +38,11 @@ export default {
       </div>
     </section>
   </div>
+  <section id="feedback">
+    <div class="bg-more-black">
+      <Feedback />
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

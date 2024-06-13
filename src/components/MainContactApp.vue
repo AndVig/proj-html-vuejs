@@ -127,7 +127,7 @@
               </div>
               <div class="col">
                 <div class="input-group mb-3">
-                  <button class="btn btn-outline-secondary dropdown-toggle form" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                  <button class="form-control dropdown-toggle form" type="button" data-bs-toggle="dropdown" aria-expanded="false">--Please choose an option--</button>
                   <ul class="dropdown-menu ">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -200,7 +200,7 @@
   position: absolute;
   right: 0;
   left: calc(50% - 200px) ;
-  top: 326px;
+  top: 335px;
   background-repeat: no-repeat;
   width: 420px;
   height: 200px;
@@ -245,12 +245,12 @@ h3{
   padding: 1rem;
   border: none;
   border-radius: 4px;
-
-}
-.form.dropdown-toggle{
-  width: 180px;
   text-align: start;
 }
+// .form.dropdown-toggle{
+//   width: 180px;
+//   text-align: start;
+// }
 .icon{ 
   padding-left: 4px;
   padding-top: 4px;

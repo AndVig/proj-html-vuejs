@@ -24,7 +24,7 @@ export default {
           {{ dataHomePage.feed.pharagraph }}
         </p>
       </div>
-      <div class="overflow-x-hidden ps-relative ">
+      <div class="overflow-x-hidden ps-relative">
         <div class="width">
           <div class="d-flex py-5 gap-5 overflow-x-aut">
             <div class="col-4" v-for="card in dataHomePage.feed.cards">
@@ -34,7 +34,10 @@ export default {
                   <span class="card-text text-white opacity-75">
                     {{ card.text }}
                   </span>
-                  <font-awesome-icon :icon="['fas', 'quote-right']" class="icon water-color fs-4 opacity-50" />
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-right']"
+                    class="icon water-color fs-4 opacity-50"
+                  />
                 </div>
               </div>
             </div>
@@ -50,8 +53,8 @@ export default {
   padding: 10% 0;
 }
 
-.icon{
-    margin-left: 60%;
+.icon {
+  margin-left: 60%;
 }
 .water-color {
   color: #00a6a6;
@@ -77,8 +80,7 @@ export default {
 
 .ps-relative {
   position: relative;
-  transform: translate3d(0px, 0px, 0px);
-  transition-property: all;
+  
 }
 
 .cursor:hover {

@@ -17,7 +17,7 @@ export default {
         <div class="row">
           <div class="col-6 cardt">
             <a href="#">
-              <i class="fa-solid fa-hourglass-end"></i>
+              <font-awesome-icon :icon="['fas', 'hourglass-end']" />
               <label for="#">Tradition</label>
             </a>
             <p class="second-p">
@@ -26,7 +26,7 @@ export default {
           </div>
           <div class="col-6 cardt">
             <a href="#">
-              <i class="fa-solid fa-lock"></i>
+              <font-awesome-icon :icon="['fas', 'lock']" />
               <label for="#">Security</label>
             </a>
             <p class="second-p">
@@ -35,7 +35,7 @@ export default {
           </div>
           <div class="col-6 cardt">
             <a href="#">
-              <i class="fa-solid fa-apple-whole"></i>
+              <font-awesome-icon :icon="['fas', 'apple-whole']" />
               <label for="#">Certificate</label>
             </a>
             <p class="second-p">
@@ -44,7 +44,7 @@ export default {
           </div>
           <div class="col-6 cardt">
             <a href="#">
-              <i class="fa-solid fa-user-tie"></i>
+              <font-awesome-icon :icon="['fas', 'user-tie']" />
               <label for="#">Expertise</label>
             </a>
             <p class="second-p">

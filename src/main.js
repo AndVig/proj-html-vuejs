@@ -12,7 +12,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
 import { faFacebookF as fb } from "@fortawesome/free-brands-svg-icons/faFacebookF";
-import { faTruckRampBox as cargo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTruckRampBox as cargo,
+  faMicrophone,
+} from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight as arrow } from "@fortawesome/free-solid-svg-icons";
 import { faCheck as check } from "@fortawesome/free-solid-svg-icons";
 import { faXmark as cross } from "@fortawesome/free-solid-svg-icons";
@@ -26,6 +29,15 @@ import { faFacebookF as facebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter as twitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn as linkedin } from "@fortawesome/free-brands-svg-icons";
 import { faQuoteRight as quotes } from "@fortawesome/free-solid-svg-icons/faQuoteRight";
+import { faMicrophone as Microphone } from "@fortawesome/free-solid-svg-icons";
+import { faClock as clock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope as envelope } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass as MagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping as bagShopping } from "@fortawesome/free-solid-svg-icons";
+import { faHourglassEnd as HourglassEnd } from "@fortawesome/free-solid-svg-icons";
+import { faLock as lock } from "@fortawesome/free-solid-svg-icons";
+import { faAppleWhole as apple } from "@fortawesome/free-solid-svg-icons";
+import { faUserTie as userTie } from "@fortawesome/free-solid-svg-icons";
 /* add icons to the library */
 library.add([
   fb,
@@ -43,6 +55,15 @@ library.add([
   twitter,
   linkedin,
   quotes,
+  Microphone,
+  clock,
+  envelope,
+  MagnifyingGlass,
+  bagShopping,
+  HourglassEnd,
+  lock,
+  apple,
+  userTie,
 ]);
 
 createApp(App)

@@ -1,11 +1,17 @@
 <script>
 import { dataContact } from '../data/dataContact.js';
+import ContactsSection from './MainContactComponents/ContactsSection.vue';
+
 
   export default {
     name: "MainContactApp",
+    components:{
+      ContactsSection,
+    },
     data() {
       return {
         dataContact,
+
       };
     },
   };
@@ -23,6 +29,7 @@ import { dataContact } from '../data/dataContact.js';
         </div>
       </div>
     </div>
+    <!-- <ContactsSection /> -->
     <!-- Divider -->
     <div class="divider"></div>
     <!-- Know First + Form -->

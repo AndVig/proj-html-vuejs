@@ -4,6 +4,7 @@ import TransportSectionElements from "./MainHomeComponents/TransportSectionEleme
 import MainService from "./MainHomeComponents/MainService.vue";
 import StaffNumbers from "./MainHomeComponents/StaffNumbers.vue";
 import Feedback from "./MainHomeComponents/Feedback.vue";
+import BusinessCopy from "./MainHomeComponents/BusinessCopy.vue";
 export default {
   name: "MainHomeApp",
   components: {
@@ -12,6 +13,7 @@ export default {
     MainService,
     StaffNumbers,
     Feedback,
+    BusinessCopy,
   },
 };
 </script>
@@ -37,12 +39,15 @@ export default {
         <StaffNumbers />
       </div>
     </section>
+    <section id="feedback">
+      <div class="bg-more-black">
+        <Feedback />
+      </div>
+    </section>
+    <section id="business">
+      <BusinessCopy />
+    </section>
   </div>
-  <section id="feedback">
-    <div class="bg-more-black">
-      <Feedback />
-    </div>
-  </section>
 </template>
 
 <style lang="scss" scoped>

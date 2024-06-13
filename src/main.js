@@ -25,6 +25,7 @@ import { faTemperatureHigh as temperature } from "@fortawesome/free-solid-svg-ic
 import { faFacebookF as facebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter as twitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn as linkedin } from "@fortawesome/free-brands-svg-icons";
+import { faQuoteRight as quotes } from "@fortawesome/free-solid-svg-icons/faQuoteRight";
 /* add icons to the library */
 library.add([
   fb,
@@ -41,6 +42,7 @@ library.add([
   facebook,
   twitter,
   linkedin,
+  quotes,
 ]);
 
 createApp(App)

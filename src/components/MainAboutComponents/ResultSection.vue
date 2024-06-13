@@ -1,42 +1,50 @@
 <script>
+import { dataAbout } from "../../data/dataAbout";
 export default {
   name: "ResultSection",
-  props: {
-    results: Object,
+  data() {
+    return {
+      dataAbout,
+    };
   },
 };
 </script>
 <template>
-  <div class="my-container">
-    <div>
-      <h6>WHAT ARE WE DOING</h6>
-      <h3>Results in Numbers</h3>
-      <p>
-        Our goal is to exceed expectations by delivering the best job possible.
-      </p>
+  <div class="col pad">
+    <div class="content">
+      <div class="text-center">
+        <span class="water-color font-size fw-bold">{{
+          dataAbout.staffNumbers.sub_title
+        }}</span>
+        <h1 class="text-white display-5 fw-bold py-3">
+          {{ dataAbout.staffNumbers.title }}
+        </h1>
+        <p class="text-white opacity-75">
+          {{ dataAbout.staffNumbers.pharagraph }}
+        </p>
+        <div class="d-flex justify-content-around">
+          <div
+            class="col-3 my-5"
+            v-for="(num, index) in dataAbout.staffNumbers.numbers"
+          >
+            <span class="water-color fs-1 fw-bold">{{ num.num }}</span>
+            <p class="text-white opacity-75">{{ num.type }}</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul>
-      <li>
-        <span>128</span>
-        <span>Certifications</span>
-      </li>
-      <li>
-        <span>230</span>
-        <span>Employees</span>
-      </li>
-      <li>
-        <span>517</span>
-        <span>Customers</span>
-      </li>
-      <li>
-        <span>94</span>
-        <span>Countries Served</span>
-      </li>
-    </ul>
   </div>
 </template>
-<style scoped lang="scss">
-section {
-  width: 100%;
+
+<style lang="scss" scoped>
+.pad {
+  padding: 10% 0;
+}
+.water-color {
+  color: #00a6a6;
+}
+.font-size {
+  font-size: 13px;
+  letter-spacing: 3px;
 }
 </style>

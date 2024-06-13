@@ -56,7 +56,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
 
           </div>
-          <div class="col py-5 px-5 text-white">
+          <div class="col py-5 text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
@@ -79,7 +79,7 @@
             </ul>
             <button type="submit" class="btn my-3 map-dark btn-primary">View Map</button>
           </div>
-          <div class="col py-5 px-5 text-white">
+          <div class="col py-5 text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
@@ -264,6 +264,7 @@ h3{
   margin-right: 5px;
   display: inline-block;
 }
+
 .switch:hover{
   .icon-wrapper{
     background-color: #058283;

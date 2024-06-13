@@ -14,7 +14,7 @@ export default {
   
     <footer >
         <div class="container ">
-            <div class="row ">
+            <div class="row justify-content-center">
                 <div class="col-3 info">
                     <img class="img" src="../assets/img/logo.svg" alt="">
                     <div class="content-block">
@@ -42,14 +42,14 @@ export default {
                     </ul>
                     
                 </div>
-                <div class="d-flex col row cards-container ">
-                    <div v-for="card in dataFooter.cards" class="card col-1">
-                        <h5 >{{card.title}}</h5>
-                        <ul class="nav flex-column">
-                            <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
-                        </ul>
-                    </div>
+                
+                <div v-for="card in dataFooter.cards" class="card  col-1">
+                    <h5 >{{card.title}}</h5>
+                    <ul class="nav flex-column ">
+                        <li v-for="element in card.elements" class="mb-2">{{ element }}</li>
+                    </ul>
                 </div>
+                
             </div>
         </div> 
         <nav class="navbar navbar-expand top">
@@ -118,8 +118,9 @@ export default {
         
     }
     .button{
-        color: #bec1ce;
         border-color: #05828380;
+        color: #bec1ce;
+        
         padding: 10px 25px;
         background-color: transparent;
         border-radius: 100px;
@@ -127,8 +128,7 @@ export default {
         transition: all .4s ease-out 0s;
     }
     .button:hover{
-        border-color: white;
-        
+        border-color: white;  
     }
     
     .card{
@@ -150,4 +150,5 @@ export default {
         transform: translateY(-10px);
         transition: 0.5s;
     }
+    
 </style>

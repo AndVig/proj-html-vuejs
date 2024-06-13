@@ -23,8 +23,8 @@
     <div class="divider"></div>
     <!-- Know First + Form -->
     <div class="container text-start py-5">
-      <div class="row align-items-start py-5">
-        <div class="col px-5">
+      <div class="row justify-content-center align-items-center py-5">
+        <div class="col-5 px-5">
           <div class="py-5">
             <p id="green">NEWSLETTER</p>
             <h3>Know First</h3>
@@ -33,7 +33,7 @@
           </div>
         </div>
         <!-- Form 1 -->
-        <div class="col py-5">
+        <div class="col-5 px-5 py-5">
           <form>
             <div class="mb-3">
               <input type="name" placeholder="Name" class="form-control form" id="name" >
@@ -56,10 +56,10 @@
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.​</p>
 
           </div>
-          <div class="col py-5 text-white">
+          <div class="col-3 py-5  text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
-                <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
+                <a class="nav-link text-left switch dim" href="tel:+1 (305) 1234-5678">
                   <div class="icon-wrapper rounded-circle"><font-awesome-icon class="icon" :icon="['fas', 'phone']" /></div>
                   <div class="list-text">+1 (305) 1234-5678</div>
                 </a>
@@ -79,7 +79,7 @@
             </ul>
             <button type="submit" class="btn my-3 map-dark btn-primary">View Map</button>
           </div>
-          <div class="col py-5 text-white">
+          <div class="col-3 py-5 text-white">
             <ul class="navbar-nav">
               <li class="navbar-item">
                 <a class="nav-link text-left switch" href="tel:+1 (305) 1234-5678">
@@ -107,9 +107,9 @@
     </div>
     <!-- Get in touch -->
      <div class="container text-start">
-      <div class="row justify-content-around py-3">
+      <div class="row justify-content-center py-3">
         <!--Form 2-->
-        <div class="col py-5 px-2 text-black">
+        <div class="col-7 py-5 px-5 text-black">
           <p id="green">SEND A MESSAGE</p>
             <h3>GET IN TOUCH</h3>
             <p> We will respond to your message as soon as possible.​</p>
@@ -145,7 +145,7 @@
             </div>
         </div>
         <!--Other stuff-->
-        <div class="col py-5 px-5 text-white">
+        <div class="col-3 py-5 px-5 text-white">
           <div class="text-black">
             <h3>Exemple Inc.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -185,6 +185,7 @@
 </template>
 
 <style lang="scss" scoped>
+
 .background{
   background-image: url(../assets/img/download.jpg);
   background-repeat: no-repeat;
@@ -200,7 +201,7 @@
   position: absolute;
   right: 0;
   left: calc(50% - 200px) ;
-  top: 335px;
+  top: 365px;
   background-repeat: no-repeat;
   width: 420px;
   height: 200px;
@@ -235,6 +236,7 @@ h3{
   line-height: 1.2;
 
 }
+
 .form{
   font-size: 1rem;
   font-weight: 400;

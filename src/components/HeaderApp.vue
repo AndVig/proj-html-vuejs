@@ -52,17 +52,17 @@ export default {
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
-              <i class="fab fa-facebook-f m-0"></i>
+              <font-awesome-icon :icon="['fab', 'facebook-f']" />
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
-              <i class="fab fa-twitter m-0"></i>
+              <font-awesome-icon :icon="['fab', 'twitter']" />
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link m-0">
-              <i class="fab fa-linkedin-in m-0"></i>
+              <font-awesome-icon :icon="['fab', 'linkedin-in']" />
             </a>
           </li>
         </ul>

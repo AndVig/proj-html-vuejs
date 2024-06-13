@@ -80,7 +80,6 @@ export default {
 
 .ps-relative {
   position: relative;
-  
 }
 
 .cursor:hover {

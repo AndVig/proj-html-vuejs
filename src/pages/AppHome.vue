@@ -1,5 +1,4 @@
 <script>
-import { toRaw } from "vue";
 import FooterApp from "../components/FooterApp.vue";
 import HeaderApp from "../components/HeaderApp.vue";
 import MainHomeApp from "../components/MainHomeApp.vue";

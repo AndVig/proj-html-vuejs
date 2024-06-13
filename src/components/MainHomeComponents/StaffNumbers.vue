@@ -17,9 +17,9 @@ export default {
         <span class="water-color font-size fw-bold">{{
           dataHomePage.staffNumbers.sub_title
         }}</span>
-        <h1 class="text-white display-5 fw-bold py-3">
+        <h2 class="text-white display-5 fw-bold py-3">
           {{ dataHomePage.staffNumbers.title }}
-        </h1>
+        </h2>
         <p class="text-white opacity-75">
           {{ dataHomePage.staffNumbers.pharagraph }}
         </p>

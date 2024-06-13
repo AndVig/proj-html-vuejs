@@ -57,40 +57,27 @@ export default {
                 <ul class="navbar-nav left">
                 <li class="nav-item">
                     <a href="#" class="nav-link m-0">
-                    <i class="fas fa-clock text-after"></i>
-                    {{ openHours }}
+                    <span>© 2024 - All rights reserved. Nexgen is maintained by Codings Group.</span>
                     </a>
                 </li>
                 </ul>
                 <div class="ml-auto"></div>
                 <ul class="navbar-nav right">
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-0">
-                    <i class="fas fa-phone-alt text-after"></i>
-                    {{ telephoneNumber }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-0">
-                    <i class="fas fa-envelope text-after"></i>
-                    {{ mainMailAdress }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-0">
-                    <i class="fab fa-facebook-f m-0"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-0">
-                    <i class="fab fa-twitter m-0"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-0">
-                    <i class="fab fa-linkedin-in m-0"></i>
-                    </a>
-                </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-0">
+                            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-0">
+                            <font-awesome-icon :icon="['fab', 'twitter']" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-0">
+                            <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>        

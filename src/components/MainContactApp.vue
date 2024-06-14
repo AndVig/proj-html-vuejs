@@ -133,7 +133,7 @@ import ContactsSection from './MainContactComponents/ContactsSection.vue';
             </div>
             <div class="col row my-3">
               <div class="col">
-                <input type="name" placeholder="Name" class="form-control form" id="name" >
+                <input type="name" placeholder="Second Name" class="form-control form" id="name" >
               </div>
               <div class="col">
                 <div class="input-group mb-3">

@@ -133,7 +133,7 @@ import ContactsSection from './MainContactComponents/ContactsSection.vue';
             </div>
             <div class="col row my-3">
               <div class="col">
-                <input type="name" placeholder="Name" class="form-control form" id="name" >
+                <input type="name" placeholder="Second Name" class="form-control form" id="name" >
               </div>
               <div class="col">
                 <div class="input-group mb-3">
@@ -210,7 +210,7 @@ import ContactsSection from './MainContactComponents/ContactsSection.vue';
   position: absolute;
   right: 0;
   left: calc(50% - 200px) ;
-  top: 365px;
+  top: 373px;
   background-repeat: no-repeat;
   width: 420px;
   height: 200px;
